@@ -3,8 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import Hello from './components/Hello';
 import Message from './components/Message';
-import Parent from './components/Parent';
-
+import SingleContainer from './components/SingleContainer';
+import MultipleContainer from './components/MultipleContainer';
 
 function App() {
   return (
@@ -25,7 +25,19 @@ function App() {
       </header>
       <Hello />
       <Message />
-      <Parent />
+
+      {/* 複数の子要素を渡すことはできない */}
+      <SingleContainer title="Hello!">
+          {/* <p>I am child.</p> */}
+          <p>I am child.</p>
+      </SingleContainer>
+
+
+      <MultipleContainer title='hello!!'>
+        <p>this is child 1.</p>
+        <p>this is child 2.</p>
+        <p>this is child 3.</p>
+      </MultipleContainer>
     </div>
   );
 }
