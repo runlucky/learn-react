@@ -5,6 +5,7 @@ import Hello from './components/Hello';
 import Message from './components/Message';
 import SingleContainer from './components/SingleContainer';
 import MultipleContainer from './components/MultipleContainer';
+import Page from './components/Page';
 
 function App() {
   return (
@@ -27,8 +28,7 @@ function App() {
       <Message />
 
       {/* 複数の子要素を渡すことはできない */}
-      <SingleContainer title="Hello!">
-          {/* <p>I am child.</p> */}
+      <SingleContainer title={"hello!"}>
           <p>I am child.</p>
       </SingleContainer>
 
@@ -38,6 +38,8 @@ function App() {
         <p>this is child 2.</p>
         <p>this is child 3.</p>
       </MultipleContainer>
+
+      <Page/>
     </div>
   );
 }
