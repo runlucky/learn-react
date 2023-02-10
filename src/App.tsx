@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Hello from './components/Hello';
 import Message from './components/Message';
+import Parent from './components/Parent';
 
 
 function App() {
@@ -22,8 +23,9 @@ function App() {
           Learn React!!!
         </a>
       </header>
-      <Hello/>
+      <Hello />
       <Message />
+      <Parent />
     </div>
   );
 }

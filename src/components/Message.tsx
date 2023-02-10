@@ -1,6 +1,10 @@
 const Text = (props: {content: string}) => {
+
+    // こうも書ける
+    // const content = props.content
     const { content } = props
-    return <p className="text">{content}</p>
+    
+    return <p className="text">- {content}</p>
 }
 
 const Message = (props: {}) => {
