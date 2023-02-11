@@ -6,6 +6,8 @@ import Message from './components/Message';
 import SingleContainer from './components/SingleContainer';
 import MultipleContainer from './components/MultipleContainer';
 import Page from './components/Page';
+import Hooks from './components/Hooks';
+
 
 function App() {
   return (
@@ -40,6 +42,7 @@ function App() {
       </MultipleContainer>
 
       <Page/>
+      <Hooks />
     </div>
   );
 }
