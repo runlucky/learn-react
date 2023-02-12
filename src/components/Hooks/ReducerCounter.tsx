@@ -4,6 +4,7 @@ enum ReduceAction {
     increment, decrement, double, reset
 }
 
+// ロジックをView(ReducerCounter)から追い出している
 const reducer = (currentValue: number, action: ReduceAction) => {
     switch (action) {
         case ReduceAction.increment: return currentValue + 1
