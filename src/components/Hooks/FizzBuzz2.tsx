@@ -4,6 +4,10 @@ export const FizzBuzz2 = () => {
     const [ value, setValue ] = useState(1)
     
     console.log(`count: ${value}`)
+
+    // このviewが再描画されるたびにこのcallbackも再生成される
+    // そのためBuzzのmemo化を貫通してBuzzも再描画される
+    // これはcallbackやオブジェクトを渡したときに発生する
     const onBuzzClick = () => { console.log("Buzz Clicked") }
 
     return(

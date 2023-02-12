@@ -2,6 +2,7 @@ import StateCounter from "./StateCounter"
 import ReducerCounter from "./ReducerCounter"
 import { FizzBuzz } from "./FizzBuzz"
 import { FizzBuzz2 } from "./FizzBuzz2"
+import { CallbackCounter } from "./CallbackCounter"
 
 const Hooks = () => {
     return (
@@ -11,6 +12,7 @@ const Hooks = () => {
             <ReducerCounter initialValue={0} />
             <FizzBuzz />
             <FizzBuzz2 />
+            <CallbackCounter />
 
         </div>
     )    

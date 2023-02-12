@@ -1,4 +1,4 @@
-import { useReducer, useState } from "react"
+import { useState } from "react"
 
 // userStateを用いたカウンター
 const StateCounter = (props: { initialValue: number }) => {
