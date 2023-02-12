@@ -1,6 +1,7 @@
 import StateCounter from "./StateCounter"
 import ReducerCounter from "./ReducerCounter"
-import FizzBuzz from "./FizzBuzz"
+import { FizzBuzz } from "./FizzBuzz"
+
 const Hooks = () => {
     return (
         <div>

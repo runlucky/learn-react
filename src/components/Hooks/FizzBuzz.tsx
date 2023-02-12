@@ -1,7 +1,7 @@
 import { useState, memo } from "react"
 
 
-const FizzBuzz = () => {
+export const FizzBuzz = () => {
     const [count, setCount] = useState(1)
     return(
         <div>
@@ -28,4 +28,3 @@ const Buzz = memo<{ isBuzz: boolean }>((props) => {
     return <span>{props.isBuzz ? "Buzz" : "-"}</span>
 })
 
-export default FizzBuzz
