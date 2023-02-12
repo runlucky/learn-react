@@ -6,7 +6,7 @@ import Message from './components/Message';
 import SingleContainer from './components/SingleContainer';
 import MultipleContainer from './components/MultipleContainer';
 import Page from './components/Page';
-import Hooks from './components/Hooks';
+import Hooks from './components/Hooks/Hooks';
 
 
 function App() {
