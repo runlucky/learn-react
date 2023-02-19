@@ -3,6 +3,7 @@ import ReducerCounter from "./ReducerCounter"
 import { FizzBuzz } from "./FizzBuzz"
 import { FizzBuzz2 } from "./FizzBuzz2"
 import { CallbackCounter } from "./CallbackCounter"
+import { UseMemoSample } from "./UseMemoSample"
 
 const Hooks = () => {
     return (
@@ -13,6 +14,7 @@ const Hooks = () => {
             <FizzBuzz />
             <FizzBuzz2 />
             <CallbackCounter />
+            <UseMemoSample />
 
         </div>
     )    
