@@ -13,6 +13,7 @@ const getLocale = (text: string) => {
     }
 }
 
+// useEffectは描画後に実行される
 export const Clock = () => {
     const [timestamp, setTimestamp] = useState(new Date())
     const [locale, setLocale] = useState(Locale.en)
@@ -31,6 +32,10 @@ export const Clock = () => {
     }, []) // []を指定することで初回のみ実行される
     
     // 描画関数中にlocalStorageを読み込むと、描画遅延するため、useEffectを使う
+    // ただし、useEffectは描画後に実行されるため、初期値のenが表示される
+    // そのためjaに設定してると、一瞬enが表示される
+    // useLayoutEffectを使うことで描画前に実行されるため、上記問題を回避できる
+    // ただし、useLayoutEffectは同期的に実行され、描画をブロックするため、重い処理をする場合は注意する
     useEffect(() => {
         const _locale = localStorage.getItem("Locale")
         console.log(`localStorageからLocaleを取得: ${_locale}`)
