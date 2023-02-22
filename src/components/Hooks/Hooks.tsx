@@ -5,6 +5,7 @@ import { FizzBuzz2 } from "./FizzBuzz2"
 import { CallbackCounter } from "./CallbackCounter"
 import { UseMemoSample } from "./UseMemoSample"
 import { Clock } from "./353-useEffect"
+import { Parent } from "./354-useContext"
 
 const Hooks = () => {
     return (
@@ -17,7 +18,7 @@ const Hooks = () => {
             <CallbackCounter />
             <UseMemoSample />
             <Clock />
-
+            <Parent />
         </div>
     )    
 }
