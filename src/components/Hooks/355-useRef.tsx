@@ -38,7 +38,7 @@ export const ImageUploader = () => {
         {/* inputImageRefを使って、非表示のinputにアクセスする */}
         <p style={{ textDecoration: "underline" }} onClick={onClickInput}>画像を選択</p>
         
-        
+        {/* useStateを使っていないため、fileRefが更新されても再描画されない */}
         {fileRef.current !== null && <p>選択中: {fileRef.current.name}</p>}
         
         
