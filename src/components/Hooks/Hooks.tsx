@@ -7,6 +7,7 @@ import { UseMemoSample } from "./UseMemoSample"
 import { Clock } from "./353-useEffect"
 import { Parent } from "./354-useContext"
 import { ImageUploader } from "./355-useRef"
+import { ImperativeParent } from "./355-useImperativeHandle"
 
 const Hooks = () => {
     return (
@@ -20,7 +21,8 @@ const Hooks = () => {
             <UseMemoSample />
             <Clock />
             <Parent />
-            <ImageUploader/>
+            <ImageUploader />
+            <ImperativeParent />
         </div>
     )    
 }
