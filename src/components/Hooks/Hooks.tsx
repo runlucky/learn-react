@@ -8,6 +8,7 @@ import { Clock } from "./353-useEffect"
 import { Parent } from "./354-useContext"
 import { ImageUploader, ImageUploaderEx } from "./355-useRef"
 import { ImperativeParent } from "./355-useImperativeHandle"
+import { Input } from "./356−useInput"
 
 const Hooks = () => {
     return (
@@ -24,6 +25,7 @@ const Hooks = () => {
             <ImageUploader />
             <ImageUploaderEx />
             <ImperativeParent />
+            <Input />
         </div>
     )    
 }
